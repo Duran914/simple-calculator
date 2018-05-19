@@ -1,9 +1,17 @@
 /* calculator styling */
+
+button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button{
+    width: 100%;
+}
 .card{
     background-color: #c43c3c;
     color: white;
     border: 4px solid #471616;
-    text-align: center;
 }
 
 /* removes padding */
@@ -19,11 +27,20 @@
     border: 2px solid #9b3030;
     transition-duration: .4s;
     cursor: pointer;
+    color: #fff;
 }
 .nums:hover, .mathOperators:hover, .clear:hover{
-    background-color: #471616;
+    background-color: #812929;
 }
-/* Solution field */
+/* output screen */
 .output-field{
     float: right;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    text-align: right;
+    box-shadow: inset 0 0 7px;
+    padding: 0 10px 0 0;
 }
